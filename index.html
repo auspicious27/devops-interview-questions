@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevOps Terminal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1 class="title">DevOps Terminal</h1>
+            <nav class="nav-links">
+                <a href="#topics" class="nav-link">Topics</a>
+                <a href="https://github.com/auspicious27/devops-interview-questions" target="_blank" class="nav-link">Contribute</a>
+                <a href="https://github.com/auspicious27/devops-interview-questions" target="_blank" class="nav-link">
+                    <span class="star-icon">⭐</span> Star
+                </a>
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <span class="moon-icon">🌙</span>
+                </button>
+            </nav>
+        </header>
+
+        <!-- Welcome Section -->
+        <section class="welcome-section">
+            <div class="terminal-prompt">
+                <span class="prompt-symbol">$</span>
+                <span class="prompt-text">Welcome to DevOps Terminal</span>
+            </div>
+            <div class="search-container">
+                <button class="refresh-btn" id="refreshBtn" title="Refresh Content">
+                    <span class="refresh-icon">🔄</span> Refresh Content
+                </button>
+            </div>
+            <p class="description">Your interactive DevOps interview preparation platform</p>
+            <div class="prompt-line">
+                <span class="prompt-symbol">></span>
+                <span class="prompt-text">Choose your preparation mode:</span>
+            </div>
+            <div class="search-container">
+                <input type="text" id="searchInput" class="search-input" placeholder="Search topics or scenarios...">
+            </div>
+        </section>
+
+        <!-- Interview Questions Section -->
+        <section class="questions-section" id="questionsSection">
+            <h2 class="section-title"># Interview Questions</h2>
+            <div class="topics-grid" id="topicsGrid">
+                <!-- Topics will be dynamically loaded here -->
+            </div>
+        </section>
+
+        <!-- Interview Scenarios Section -->
+        <section class="scenarios-section" id="scenariosSection">
+            <h2 class="section-title"># Interview Scenarios</h2>
+            <div class="topics-grid" id="scenariosGrid">
+                <!-- Scenarios will be dynamically loaded here -->
+            </div>
+        </section>
+
+        <!-- Question Detail Modal -->
+        <div class="modal" id="questionModal">
+            <div class="modal-content">
+                <span class="close" id="closeModal">&times;</span>
+                <div class="modal-body" id="modalBody">
+                    <!-- Question content will be loaded here -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p class="footer-text">
+                <strong>Created with ❤️ by <a href="https://www.linkedin.com/in/mdsayeedfiroz/" target="_blank" class="footer-link">Md Sayeed Firoz</a></strong>
+            </p>
+            <p class="footer-text">
+                Join the <strong>Most Active DevOps Community</strong>
+            </p>
+            <p class="footer-text">
+                Check out more DevOps interview questions at this <a href="https://github.com/auspicious27/devops-interview-questions" target="_blank" class="footer-link">GitHub Repo</a>
+            </p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
